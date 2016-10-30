@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="375dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Arrival Time     : "
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:padding="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Arrival Time      "
+                android:id="@+id/txt_arrival_time"
+                android:textSize="16dp"
+                android:paddingTop="10dp"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="375dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="60dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Departure Time  : "
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:padding="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Departure Time      "
+                android:id="@+id/txt_departure_time"
+                android:textSize="16dp"
+                android:paddingTop="10dp"
+
+                />
+
+        </LinearLayout>
+        <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="132dp"
+        android:background="#89c"
+        android:orientation="horizontal">
+
+        <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:id="@+id/sundhara_call"
+        android:src="@drawable/phonee" />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="9823000790 (Sundhara)"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="200dp"
+            android:background="#79c"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:id="@+id/gaushala_call"
+                android:src="@drawable/phonee" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="9811106602 (Gaushala)"/>
+        </LinearLayout>
+        <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="270dp"
+
+        android:background="#79c"
+        android:orientation="horizontal">
+
+        <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:id="@+id/kaliya_call"
+        android:src="@drawable/phonee" />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="9860306332 (Kaliya)"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="340dp"
+
+            android:background="#87c"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:id="@+id/brj_call"
+                android:src="@drawable/phonee" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="9810310933 (Birgunj)"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

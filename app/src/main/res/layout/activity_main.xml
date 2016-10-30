@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context="com.marr.busreservation.MainActivity"
+    android:orientation="vertical"
+    >
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView"
+            android:src="@drawable/pizza"
+            />
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+       <Button
+
+           android:layout_width="130dp"
+           android:layout_height="80dp"
+           android:layout_margin="10dp"
+           android:id="@+id/btn_travel"
+           android:text="Travel"
+           android:textStyle="italic"
+           android:textSize="20dp"
+           android:textColor="#890c0c"
+           android:background="@drawable/gradient"
+
+           />
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="80dp"
+            android:id="@+id/btn_about_us"
+            android:text="About us"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="italic"
+            android:textSize="20dp"
+            android:textColor="#890c0c"
+            android:background="@drawable/gradient"
+
+            />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="120dp">
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="80dp"
+                android:id="@+id/btn_contact_us"
+                android:text="Contact"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="italic"
+                android:textSize="20dp"
+                android:textColor="#890c0c"
+                android:background="@drawable/gradient"
+
+                />
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="80dp"
+            android:id="@+id/btn_Share"
+            android:text="share"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:textStyle="italic"
+            android:textSize="20dp"
+            android:textColor="#890c0c"
+            android:background="@drawable/gradient"
+
+            />
+</LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>
+    <!--android:background="@android:color/transparent"-->

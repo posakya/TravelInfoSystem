@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">BusReservation</string>
+    <string name="Buses">Buses</string>
+    <string name="action_settings">Settings</string>
+    <string name="Home">Home</string>
+    <string name="Travels">Travels</string>
+    <string name="Information">Information</string>
+    <string name="Sulav">Sulav</string>
+    <string name="Sapana">Sapana</string>
+    <string name="Panas">Panas</string>
+    <string name="Apple">Apple</string>
+    <string name="Samar">Samar</string>
+    <string name="Anmol">Anmol</string>
+    <string name="JaiHo">JaiHo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

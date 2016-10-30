@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="375dp"
+            android:layout_height="40dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name               : "
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:padding="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name      "
+                android:textStyle="bold"
+                android:id="@+id/txt_passenger_name"
+                android:textSize="16dp"
+                android:paddingTop="10dp"
+
+                />
+
+        </LinearLayout>
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="375dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seat Number  : "
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:padding="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seat Number      "
+                android:id="@+id/txt_seat_number"
+                android:textSize="16dp"
+                android:paddingTop="10dp"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="375dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="80dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact           : "
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:padding="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact   "
+                android:id="@+id/txt_contact"
+                android:textSize="16dp"
+                android:paddingTop="10dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="375dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="120dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Destination     : "
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:padding="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Destination  "
+                android:id="@+id/txt_destination1"
+                android:textSize="16dp"
+                android:paddingTop="10dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="375dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="160dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bus Number   :"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:padding="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bus Number      "
+                android:id="@+id/txt_bus_number1"
+                android:textSize="16dp"
+                android:paddingTop="10dp"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="375dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="200dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date                 : "
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:padding="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date   "
+                android:id="@+id/txt_date1"
+                android:textSize="16dp"
+                android:paddingTop="10dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="375dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="240dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time                : "
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:padding="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time   "
+                android:id="@+id/txt_time"
+                android:textSize="16dp"
+                android:paddingTop="10dp"
+                />
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>
