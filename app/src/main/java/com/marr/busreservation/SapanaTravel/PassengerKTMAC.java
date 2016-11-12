@@ -16,6 +16,7 @@ import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.marr.busreservation.Bases.Constants;
 import com.marr.busreservation.Bases.Passenger;
 import com.marr.busreservation.R;
 import com.nostra13.universalimageloader.core.ImageLoader;
@@ -42,9 +43,10 @@ public class PassengerKTMAC extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_travel_info);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         PassengerKTMAC.this.setTitle("Passenger Detail");
         lvpassenger=(ListView) findViewById(R.id.travel_info_list);
-        new JSONTask().execute("http://192.168.137.1/busreservation/SapanaTravel/passengerKTMAC.php");
+        new JSONTask().execute(Constants.BASE_URL +"/BusReservation/SapanaTravel/passengerKTMAC.php");
     }
     public class JSONTask extends AsyncTask<String, String, List<Passenger>> {
 
@@ -187,11 +189,14 @@ public class PassengerKTMAC extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-        if (id == R.id.action_settings) {
-            return true;
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                //Write your logic here
+                this.finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
         }
-        return super.onOptionsItemSelected(item);
     }
 
 }

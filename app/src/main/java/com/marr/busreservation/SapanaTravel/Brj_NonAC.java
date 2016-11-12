@@ -55,7 +55,7 @@ public class Brj_NonAC extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         myView= inflater.inflate(R.layout.activity_travel_info, container, false);
-        new JSONTask().execute("http://192.168.137.1/busreservation/SapanaTravel/traveldetailBrjNonAC.php");
+        new JSONTask().execute(Constants.BASE_URL +"/BusReservation/SapanaTravel/traveldetailBrjNonAC.php");
         lvdetail = (ListView) myView.findViewById(R.id.travel_info_list);
 
         return myView;

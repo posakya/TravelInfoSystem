@@ -46,7 +46,8 @@ public class Bus extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bus);
-        new JSONTask().execute(Constants.BASE_URL +"/busreservation/api.php");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        new JSONTask().execute(Constants.BASE_URL +"/BusReservation/api.php");
         DisplayImageOptions defaultOptions = new DisplayImageOptions.Builder()
                 .cacheInMemory(true)
                 .cacheOnDisk(true)
@@ -67,7 +68,7 @@ public class Bus extends AppCompatActivity {
 //                          case 0:
 //                               startActivity(new Intent(getApplicationContext(), SapanaAC.class));
 //                              break;
-                            case 0:
+                            case 1:
                                 startActivity(new Intent(getApplicationContext(), Sapana.class));
                                 break;
 //                            case 2:
@@ -129,7 +130,7 @@ public class Bus extends AppCompatActivity {
                 for (int i = 0; i < size; i++) {
                     JSONObject j = array.getJSONObject(i);
                     Item itemList1 = new Item();
-                    itemList1.setImage("http://192.168.137.1/busreservation/image/" + j.getString("Image"));
+                    itemList1.setImage(Constants.BASE_URL +"/BusReservation/image/" + j.getString("Image"));
                     itemList1.setId(j.getString("Id"));
                     itemList1.setName(j.getString("Name"));
                     itemList1.setType(j.getInt("Type"));
@@ -224,11 +225,14 @@ public class Bus extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-        if (id == R.id.action_settings) {
-            return true;
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                //Write your logic here
+                this.finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
         }
-        return super.onOptionsItemSelected(item);
     }
 
 }

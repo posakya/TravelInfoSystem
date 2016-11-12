@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.HorizontalScrollView;
 import android.widget.TabHost;
@@ -28,6 +29,7 @@ ViewPager viewPager;
         Sapana.this.setTitle("Sapana Travel");
         initViewPager();
         initTabHost();
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
     private void initTabHost() {
         tabhost=(TabHost)findViewById(R.id.tabHost);
@@ -97,5 +99,16 @@ ViewPager viewPager;
         FragmentPagerAdapter pagerAdapter=new FragmentPageAdapter(getSupportFragmentManager(),fragmentList);
         viewPager.setAdapter(pagerAdapter);
         viewPager.setOnPageChangeListener(this);
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                //Write your logic here
+                this.finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 }

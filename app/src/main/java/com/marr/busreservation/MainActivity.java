@@ -8,18 +8,27 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ViewFlipper;
 
 
 public class MainActivity extends AppCompatActivity {
 
     private ImageView imageView;
+    //Animation Fade_in,Fade_out;
     private Button btn_travel,btn_contactus,btn_aboutus,btn_share;
+    private ViewFlipper viewFlipper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setTitle(getResources().getText(R.string.Home));
+       // viewFlipper=(ViewFlipper)findViewById(R.id.ViewFlipper);
+       // viewFlipper.setAnimation(Fade_in);
+       // viewFlipper.setAnimation(Fade_out);
+       // viewFlipper.setAutoStart(true);
+       // viewFlipper.startFlipping();
+//        viewFlipper.setFlipInterval(1000);
         imageView=(ImageView) findViewById(R.id.imageView);
         btn_travel=(Button) findViewById(R.id.btn_travel);
         btn_aboutus=(Button) findViewById(R.id.btn_about_us);
